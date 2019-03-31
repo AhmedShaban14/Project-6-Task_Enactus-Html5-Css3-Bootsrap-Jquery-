@@ -1,0 +1,211 @@
+* , *:after, *:before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body
+{
+    font-family: Arial;
+    height: 3000px;
+}
+/*Start Header Section*/
+    
+section.header {
+width: 100%;
+    height: auto;
+    background-color: beige;
+    
+}
+
+section.header .parent {
+display: flex;
+flex-direction: row;
+    justify-content: space-between
+}
+
+section.header .parent .logo h2 {
+font-size: 30px;
+    color: red
+}
+
+section.header .parent nav{
+    text-decoration: none
+
+}
+section.header .parent nav ul{
+display: flex;
+}
+
+section.header .parent nav ul li{
+text-decoration: none;
+    padding: 25px;
+    list-style: none
+}
+section.header .parent nav ul li a{
+font-size: 20px;
+    text-decoration: none
+}
+
+/*Header 2*/
+    
+section.header2 {
+width: 100%;
+    height: auto;
+    background-color: beige;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    display: none
+
+}
+section.header2 .parent2 {
+display: flex;
+    flex-direction: column;
+    position: relative
+}
+section.header2 .parent2 nav {
+display: none
+}
+section.header2 .parent2 nav ul li{
+text-decoration: none;
+    padding: 25px;
+    list-style: none;
+    font-size: 20px;
+}
+
+section.header2 .parent2 .sora{
+    width: 50px;
+    height: 20px;
+    background-color: #000;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+}
+
+
+@media (max-width:900px)
+{
+    section.header {
+    display: none
+    }
+    
+    section.header2 {
+        display: inherit;
+    }
+
+}
+
+.headerSticky{
+    background-color:#f50 !important;
+
+}
+
+section.events{
+    width: 100%;
+    background-color: beige;
+    background: url(../Images/best_since_day_one_by_daxxdzn-d7kta2i.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+section.events .parent{
+margin-top: 150px;
+    color: white;
+}
+
+section.events .parent h3{
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    background-color: white;
+    display: inline-block;
+}
+section.events .parent p{
+    font-size: 30px;
+    color: red;
+    padding:20px;
+}
+ 
+section.conference{
+width: 100%;
+    height: auto;
+    background-color: #851445;
+    padding: 10px 0px 20px 0px ;
+}
+section.conference .con-header h1{
+color: #fff
+}
+
+
+section.conference .con-button button{
+background: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    width: 80%;
+    height: 70px;
+    outline: 0;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;    
+
+}
+section.conference .con-button button:hover{
+    color: #B97EBB;
+    background: #fff;
+
+}
+section.innovation{
+width: 100%;
+    height: 400px;
+    color: beige;
+    padding: 20px 20px 70px 20px ;
+}
+
+
+section.innovation .innovate-imgae img{
+width: 100%;
+    height: 250px;
+}
+
+
+
+section.innovation .explore{
+color: #444;
+    line-height: 2
+}
+
+section.innovation .bt button{
+color: #B97EBB;
+    font-size: 20px;
+    background: none;
+    outline: 0;
+    border: 2px solid #B97EBB;
+    padding: 20px;
+    transition: all .3s ease-in-out 
+}
+
+section.innovation .bt button:hover{
+color: #fff;
+    font-size: 20px;
+    background: #B97EBB;
+    outline: 0;
+    padding: 20px
+}
+
+
+
+/*End Header Section*/
+@media (max-width:575px){
+    
+    section.events .parent h3{
+        color: blue;
+    }
+}
+@media (min-width: 768px)
+.container {
+    width: 740px;
+}
